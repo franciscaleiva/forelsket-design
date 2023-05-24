@@ -27,19 +27,29 @@ li {
 
 }
 
-.hader__nav-logo-container {
+.header__nav-logo-container img {
+    height: 80px;
+    
+}
+
+.header__nav-logo-container {
     font-size: 40px;
     height: fit-content;
     width: fit-content;
     position: relative;
-    top: 10px;
-    left: 20px;
+    top: 0px;
+    left: 10px;
     z-index: 100;
+    
+}
+
+.header__nav-logo-container img {
+    z-index: 10000;
 }
 .header__nav-list {
     text-align: right;
     position: relative;
-    top: -30px;
+    top: -50px;
     z-index: 100;
 }
 
@@ -64,28 +74,28 @@ a {
 
 .main-text {
     font-size: 100px;
-    text-align: center;
     font-family: 'Roboto';
     position: relative;
     padding-top: 250px;
-    z-index: -1;
+    z-index: 10;
+    color: #000000;
+    
+    
+    
 
 }
 
 .main-text-container {
-    height: 570px;
+    height: 600px;
     width: 100%;
     position: relative;
-    
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/03f5fc110557559.5ff1e81fe91cd.gif);
+    display: flex;
+    justify-content: center;
+    z-index: -1;
 
 }
 
-.main-text b{
-
-    font-family: 'Roboto';
-    z-index: 1;
-    
-}
 
 
 
@@ -409,6 +419,11 @@ input[type="submit"]:hover {
     transition: all 0.3s linear;
 }
 
+.gallery .active {
+    margin-top: 100px;
+}
+
+
 .gallery .col-lg-6 {
     margin-bottom: 90px; 
 
@@ -507,3 +522,34 @@ input[type="submit"]:hover {
     
     
 }
+
+/*CAROUSEL*/
+.carousel-item img{
+    object-fit: scale-down;
+}
+
+.carousel-item div{
+    width: 45%;
+    height: 400px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.carousel-img-1 {
+    margin-left: 40px;
+
+}
+.carousel-img-1 img{
+    position: relative;
+    
+}
+
+.carousel-img-2 {
+    margin-left: 45px;
+}
+
+.carousel {
+    margin-top: 100px;
+}
+
