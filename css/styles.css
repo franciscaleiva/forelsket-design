@@ -517,29 +517,17 @@ form {
 }
 /*faq.html*/
 
-.faq-title {
-    font-size: 25px;
-    margin: 40px 40px 20px 40px;
+.accordion-body {
+    font-size: 17px;
+
 
 }
 
-.faq-title b {
-    font-family: 'roboto';
-
+.accordion-button b {
+    font-family: 'Roboto';
+    font-size: 20px;
 }
 
-.faq-subtitle {
-    font-family: 'roboto';
-    font-size: 22px;
-    margin: 30px 40px;
-}
-
-.faq-img {
-    width: s;
-    height: 300px;
-    outline:1px solid black;
-    margin-left: 20px;
-}
 
 
 
