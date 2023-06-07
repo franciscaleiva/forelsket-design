@@ -1,0 +1,62 @@
+footer {
+    .footer-text {
+        font-size: 75px;
+        text-align: center;
+        position: relative;
+        margin: 100px 0px 0px 0px;
+        z-index: 1;
+        @media only screen and (max-width:992px) {
+            font-size: 50px;
+        }
+        b {
+            font-family: 'Roboto';
+            z-index: 1;
+        }
+    
+    }
+
+    .contact-button {
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Roboto';
+        position: relative;
+        margin: 50px 0px 100px 0px;
+        z-index: 1;
+        @media only screen and (max-width:992px) {
+            font-size: 13px;
+        }
+        b {
+            font-family: 'Roboto';
+            z-index: 1;
+            border: 3px solid black;
+            padding: 15px 20px;
+        }
+        b:hover {
+            color: #FFFFFF;
+            background-color: #000000;
+        }
+    
+    }
+
+    .icon-container {
+        text-align: center;
+        i {
+            margin: 0px 30px;
+            @media only screen and (max-width:992px) {
+                margin: 0px 20px;
+            }
+        }
+        i:hover {
+            color: #7c7c7c;
+
+        }
+        b {
+            display: block;
+            font-size: 13px;
+            color: #292929;
+            margin: 60px 0px;
+        }
+    
+    }
+
+}

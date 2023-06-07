@@ -1,0 +1,60 @@
+.work-carousel {
+    .carousel {
+        margin-top: 100px;
+    }
+    .carousel-control-next {
+        top: 80px;
+    }
+    .carousel-control-prev {
+        top: 80px;
+    }
+    .carousel-item {
+        img {
+            object-fit: scale-down;
+        }
+        div {
+            width: 45%;
+            height: 400px;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .carousel-img-1 {
+            margin-left: 40px;
+            img {
+                position: relative;
+            }
+        
+        }
+        .carousel-img-2 {
+            margin-left: 45px;
+        }
+    }
+    .mobile-carousel {
+        display: none;
+        @media only screen and (max-width:992px) {
+            display: flex;
+        }
+        .carousel-item {
+            margin-top: 50px;
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: scale-down;
+
+        }
+    }
+    .desktop-carousel {
+        @media only screen and (max-width:992px) {
+            display: none;
+        }
+        p {
+            b {
+                font-size: 25px;
+                margin-left: 40px;
+            }
+        }
+    }
+
+}
+

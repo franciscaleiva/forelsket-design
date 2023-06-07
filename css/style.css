@@ -3,7 +3,66 @@
   margin: 0px;
 }
 
-/*nav*/
+footer .footer-text {
+  font-size: 75px;
+  text-align: center;
+  position: relative;
+  margin: 100px 0px 0px 0px;
+  z-index: 1;
+}
+@media only screen and (max-width: 992px) {
+  footer .footer-text {
+    font-size: 50px;
+  }
+}
+footer .footer-text b {
+  font-family: "Roboto";
+  z-index: 1;
+}
+footer .contact-button {
+  font-size: 15px;
+  text-align: center;
+  font-family: "Roboto";
+  position: relative;
+  margin: 50px 0px 100px 0px;
+  z-index: 1;
+}
+@media only screen and (max-width: 992px) {
+  footer .contact-button {
+    font-size: 13px;
+  }
+}
+footer .contact-button b {
+  font-family: "Roboto";
+  z-index: 1;
+  border: 3px solid black;
+  padding: 15px 20px;
+}
+footer .contact-button b:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+footer .icon-container {
+  text-align: center;
+}
+footer .icon-container i {
+  margin: 0px 30px;
+}
+@media only screen and (max-width: 992px) {
+  footer .icon-container i {
+    margin: 0px 20px;
+  }
+}
+footer .icon-container i:hover {
+  color: #7c7c7c;
+}
+footer .icon-container b {
+  display: block;
+  font-size: 13px;
+  color: #292929;
+  margin: 60px 0px;
+}
+
 li {
   display: inline-block;
 }
@@ -90,128 +149,6 @@ a {
   font-size: 20px;
 }
 
-/*texto principal*/
-.main-text-container {
-  height: 600px;
-  width: 100%;
-  position: relative;
-  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/03f5fc110557559.5ff1e81fe91cd.gif);
-  display: flex;
-  justify-content: center;
-  z-index: -1;
-}
-.main-text-container .main-text {
-  font-size: 100px;
-  font-family: "Roboto";
-  position: relative;
-  padding-top: 250px;
-  z-index: 10;
-  color: #000000;
-}
-@media only screen and (max-width: 992px) {
-  .main-text-container .main-text {
-    font-size: 50px;
-  }
-}
-
-/*galeria home*/
-.gallery {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.gallery img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  padding: 20px;
-  transition: all 0.3s linear;
-}
-.gallery img:hover {
-  padding: 0px;
-  filter: brightness(0.7);
-}
-.gallery .active {
-  margin-top: 100px;
-}
-.gallery .col-lg-6 {
-  margin-bottom: 90px;
-}
-@media only screen and (max-width: 992px) {
-  .gallery .col-lg-6 {
-    margin-bottom: 40px;
-  }
-}
-.gallery .col-lg-6 .img-text {
-  margin-left: 20px;
-  font-size: 18px;
-}
-.gallery .col-lg-6 .description {
-  font-size: 16px;
-  color: #818181;
-}
-
-/*footer*/
-footer .footer-text {
-  font-size: 75px;
-  text-align: center;
-  position: relative;
-  margin: 100px 0px 0px 0px;
-  z-index: 1;
-}
-@media only screen and (max-width: 992px) {
-  footer .footer-text {
-    font-size: 50px;
-  }
-}
-footer .footer-text b {
-  font-family: "Roboto";
-  z-index: 1;
-}
-footer .contact-button {
-  font-size: 15px;
-  text-align: center;
-  font-family: "Roboto";
-  position: relative;
-  margin: 50px 0px 100px 0px;
-  z-index: 1;
-}
-@media only screen and (max-width: 992px) {
-  footer .contact-button {
-    font-size: 13px;
-  }
-}
-footer .contact-button b {
-  font-family: "Roboto";
-  z-index: 1;
-  border: 3px solid black;
-  padding: 15px 20px;
-}
-footer .contact-button b:hover {
-  color: #FFFFFF;
-  background-color: #000000;
-}
-footer .icon-container {
-  text-align: center;
-}
-footer .icon-container i {
-  margin: 0px 30px;
-}
-@media only screen and (max-width: 992px) {
-  footer .icon-container i {
-    margin: 0px 20px;
-  }
-}
-footer .icon-container i:hover {
-  color: #7c7c7c;
-}
-footer .icon-container b {
-  display: block;
-  font-size: 13px;
-  color: #292929;
-  margin: 60px 0px;
-}
-
-/*works carousel*/
 .work-carousel .carousel {
   margin-top: 100px;
 }
@@ -263,6 +200,72 @@ footer .icon-container b {
 .work-carousel .desktop-carousel p b {
   font-size: 25px;
   margin-left: 40px;
+}
+
+.gallery {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.gallery img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  padding: 20px;
+  transition: all 0.3s linear;
+}
+.gallery img:hover {
+  padding: 0px;
+  filter: brightness(0.7);
+}
+.gallery .active {
+  margin-top: 100px;
+}
+.gallery .col-lg-6 {
+  margin-bottom: 90px;
+}
+@media only screen and (max-width: 992px) {
+  .gallery .col-lg-6 {
+    margin-bottom: 40px;
+  }
+}
+.gallery .col-lg-6 .img-text {
+  margin-left: 20px;
+  font-size: 18px;
+}
+.gallery .col-lg-6 .description {
+  font-size: 16px;
+  color: #818181;
+}
+
+.accordion .accordion-body {
+  font-size: 17px;
+}
+.accordion .accordion-button b {
+  font-family: "Roboto";
+  font-size: 20px;
+} /*nav*/
+/*texto principal*/
+.main-text-container {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/03f5fc110557559.5ff1e81fe91cd.gif);
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.main-text-container .main-text {
+  font-size: 100px;
+  font-family: "Roboto";
+  position: relative;
+  padding-top: 250px;
+  z-index: 10;
+  color: #000000;
+}
+@media only screen and (max-width: 992px) {
+  .main-text-container .main-text {
+    font-size: 50px;
+  }
 }
 
 /*about.html*/
@@ -394,15 +397,6 @@ footer .icon-container b {
   height: 100%;
 }
 
-/*faq.html*/
-.accordion .accordion-body {
-  font-size: 17px;
-}
-.accordion .accordion-button b {
-  font-family: "Roboto";
-  font-size: 20px;
-}
-
 @media only screen and (max-width: 992px) {
   .navbar {
     display: flex;
@@ -413,9 +407,6 @@ footer .icon-container b {
   .carousel-inner p b {
     font-size: 30px;
     margin-left: 0px;
-  }
-  .main-text {
-    font-size: 50px;
   }
   .mobile-carousel .carousel-item {
     margin-top: 0px;
