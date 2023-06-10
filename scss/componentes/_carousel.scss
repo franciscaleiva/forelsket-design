@@ -43,6 +43,9 @@
             object-fit: scale-down;
 
         }
+        p {
+            margin-bottom: -60px;
+        }
     }
     .desktop-carousel {
         @media only screen and (max-width:992px) {

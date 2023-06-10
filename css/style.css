@@ -3,6 +3,28 @@
   margin: 0px;
 }
 
+li {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-header {
+    display: none;
+  }
+  .carousel-inner p b {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  .mobile-carousel .carousel-item {
+    margin-top: 0px;
+  }
+  .about .main-text {
+    text-align: center;
+  }
+  .faq {
+    text-align: center;
+  }
+}
 footer .footer-text {
   font-size: 75px;
   text-align: center;
@@ -19,7 +41,10 @@ footer .footer-text b {
   font-family: "Roboto";
   z-index: 1;
 }
-footer .contact-button {
+footer a {
+  text-decoration: none;
+}
+footer a .contact-button {
   font-size: 15px;
   text-align: center;
   font-family: "Roboto";
@@ -28,17 +53,18 @@ footer .contact-button {
   z-index: 1;
 }
 @media only screen and (max-width: 992px) {
-  footer .contact-button {
+  footer a .contact-button {
     font-size: 13px;
   }
 }
-footer .contact-button b {
+footer a .contact-button b {
   font-family: "Roboto";
   z-index: 1;
   border: 3px solid black;
   padding: 15px 20px;
+  color: #000000;
 }
-footer .contact-button b:hover {
+footer a .contact-button b:hover {
   color: #FFFFFF;
   background-color: #000000;
 }
@@ -47,6 +73,7 @@ footer .icon-container {
 }
 footer .icon-container i {
   margin: 0px 30px;
+  color: #000000;
 }
 @media only screen and (max-width: 992px) {
   footer .icon-container i {
@@ -63,30 +90,20 @@ footer .icon-container b {
   margin: 60px 0px;
 }
 
-li {
-  display: inline-block;
-}
-
 .header {
   position: relative;
   width: 100%;
   height: 50px;
   z-index: 100;
 }
-
-.header__nav {
+.header .header__nav {
   height: 80px;
   position: fixed;
   background-color: #FFFFFF;
   width: 100%;
   z-index: 100;
 }
-
-.header__nav-logo-container img {
-  height: 80px;
-}
-
-.header__nav-logo-container {
+.header .header__nav .header__nav-logo-container {
   font-size: 40px;
   height: fit-content;
   width: fit-content;
@@ -95,180 +112,54 @@ li {
   left: 10px;
   z-index: 100;
 }
-
-.header__nav-logo-container img {
+.header .header__nav .header__nav-logo-container img {
+  height: 80px;
   z-index: 10000;
 }
-
-.header__nav-list {
+.header .header__nav .header__nav-list {
   text-align: right;
   position: relative;
   top: -50px;
   z-index: 100;
 }
-
-.header__nav-list__item {
+.header .header__nav .header__nav-list .header__nav-list__item {
   padding: 0px 40px;
 }
-
-.nav-item:hover {
+.header .header__nav .header__nav-list .header__nav-list__item .nav-item:hover {
   font-weight: 900;
 }
-
-a {
+.header .header__nav .header__nav-list .header__nav-list__item a {
   text-decoration: none;
   color: #000000;
 }
-
-/*bootstrap nav*/
-.navbar {
+.header .header__nav .navbar {
   display: none;
   margin-top: -10px;
 }
-
-.container-fluid {
+@media only screen and (max-width: 992px) {
+  .header .header__nav .navbar {
+    display: flex;
+  }
+}
+.header .header__nav .navbar .container-fluid {
   background-color: #ffffff;
   border: none;
 }
-
-.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+.header .header__nav .navbar .container-fluid .navbar-brand {
+  font-size: 40px;
+}
+.header .header__nav .navbar .container-fluid .navbar-toggler {
+  border: none;
+}
+.header .header__nav .navbar .container-fluid .offcanvas, .header .header__nav .navbar .container-fluid .offcanvas-lg, .header .header__nav .navbar .container-fluid .offcanvas-md, .header .header__nav .navbar .container-fluid .offcanvas-sm, .header .header__nav .navbar .container-fluid .offcanvas-xl, .header .header__nav .navbar .container-fluid .offcanvas-xxl {
   --bs-offcanvas-width: 700px;
   --bs-offcanvas-transition: transform 0.6s ease-in-out;
 }
-
-.navbar-brand {
-  font-size: 40px;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.nav-link {
+.header .header__nav .navbar .container-fluid .offcanvas .nav-link, .header .header__nav .navbar .container-fluid .offcanvas-lg .nav-link, .header .header__nav .navbar .container-fluid .offcanvas-md .nav-link, .header .header__nav .navbar .container-fluid .offcanvas-sm .nav-link, .header .header__nav .navbar .container-fluid .offcanvas-xl .nav-link, .header .header__nav .navbar .container-fluid .offcanvas-xxl .nav-link {
   margin: 30px 0px;
   font-size: 20px;
 }
 
-.work-carousel .carousel {
-  margin-top: 100px;
-}
-.work-carousel .carousel-control-next {
-  top: 80px;
-}
-.work-carousel .carousel-control-prev {
-  top: 80px;
-}
-.work-carousel .carousel-item img {
-  object-fit: scale-down;
-}
-.work-carousel .carousel-item div {
-  width: 45%;
-  height: 400px;
-  display: inline-block;
-  overflow: hidden;
-}
-.work-carousel .carousel-item .carousel-img-1 {
-  margin-left: 40px;
-}
-.work-carousel .carousel-item .carousel-img-1 img {
-  position: relative;
-}
-.work-carousel .carousel-item .carousel-img-2 {
-  margin-left: 45px;
-}
-.work-carousel .mobile-carousel {
-  display: none;
-}
-@media only screen and (max-width: 992px) {
-  .work-carousel .mobile-carousel {
-    display: flex;
-  }
-}
-.work-carousel .mobile-carousel .carousel-item {
-  margin-top: 50px;
-}
-.work-carousel .mobile-carousel img {
-  width: 100%;
-  height: 300px;
-  object-fit: scale-down;
-}
-@media only screen and (max-width: 992px) {
-  .work-carousel .desktop-carousel {
-    display: none;
-  }
-}
-.work-carousel .desktop-carousel p b {
-  font-size: 25px;
-  margin-left: 40px;
-}
-
-.gallery {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.gallery img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  padding: 20px;
-  transition: all 0.3s linear;
-}
-.gallery img:hover {
-  padding: 0px;
-  filter: brightness(0.7);
-}
-.gallery .active {
-  margin-top: 100px;
-}
-.gallery .col-lg-6 {
-  margin-bottom: 90px;
-}
-@media only screen and (max-width: 992px) {
-  .gallery .col-lg-6 {
-    margin-bottom: 40px;
-  }
-}
-.gallery .col-lg-6 .img-text {
-  margin-left: 20px;
-  font-size: 18px;
-}
-.gallery .col-lg-6 .description {
-  font-size: 16px;
-  color: #818181;
-}
-
-.accordion .accordion-body {
-  font-size: 17px;
-}
-.accordion .accordion-button b {
-  font-family: "Roboto";
-  font-size: 20px;
-} /*nav*/
-/*texto principal*/
-.main-text-container {
-  height: 600px;
-  width: 100%;
-  position: relative;
-  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/03f5fc110557559.5ff1e81fe91cd.gif);
-  display: flex;
-  justify-content: center;
-  z-index: -1;
-}
-.main-text-container .main-text {
-  font-size: 100px;
-  font-family: "Roboto";
-  position: relative;
-  padding-top: 250px;
-  z-index: 10;
-  color: #000000;
-}
-@media only screen and (max-width: 992px) {
-  .main-text-container .main-text {
-    font-size: 50px;
-  }
-}
-
-/*about.html*/
 .about-section .row {
   margin: 0px;
 }
@@ -276,7 +167,7 @@ a {
   font-size: 0.938rem;
   margin-top: 80px;
   margin-bottom: 40px;
-  padding-left: 45px;
+  padding-left: 30px;
 }
 .about-section .row .title b {
   font-family: "Roboto";
@@ -297,10 +188,15 @@ a {
   padding: 0px 40px;
   padding-top: 5px;
 }
+@media only screen and (max-width: 992px) {
+  .about-section .row .abt-text-2 {
+    margin-top: 40px;
+  }
+}
 .about-section .row .subtitle {
   font-size: 4.375rem;
   font-family: "Roboto";
-  padding-left: 45px;
+  padding-left: 30px;
 }
 @media only screen and (max-width: 992px) {
   .about-section .row .subtitle {
@@ -313,10 +209,10 @@ a {
 }
 .about-section .row .we-titles b {
   font-family: "Roboto";
-  padding-left: 45px;
+  padding-left: 15px;
 }
 .about-section .row .we-subtitles {
-  padding-left: 45px;
+  padding-left: 15px;
   font-size: 1.063rem;
 }
 .about-section .row .last {
@@ -327,17 +223,39 @@ a {
   height: 100%;
 }
 
-/*contact.html*/
+.main-text-container {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/03f5fc110557559.5ff1e81fe91cd.gif);
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.main-text-container .main-text {
+  font-size: 90px;
+  font-family: "Roboto";
+  position: relative;
+  padding-top: 250px;
+  z-index: 10;
+  color: #000000;
+}
+@media only screen and (max-width: 992px) {
+  .main-text-container .main-text {
+    font-size: 50px;
+  }
+}
+
 .contact {
   margin-top: 70px;
 }
 .contact .contact-title {
   margin-bottom: 40px;
-  font-size: 35px;
   padding-left: 15px;
 }
 .contact .contact-title b {
   font-family: "Roboto";
+  font-size: 55px;
 }
 .contact .contact-text {
   padding-left: 15px;
@@ -397,29 +315,118 @@ a {
   height: 100%;
 }
 
+.work-carousel .carousel {
+  margin-top: 100px;
+}
+.work-carousel .carousel-control-next {
+  top: 80px;
+}
+.work-carousel .carousel-control-prev {
+  top: 80px;
+}
+.work-carousel .carousel-item img {
+  object-fit: scale-down;
+}
+.work-carousel .carousel-item div {
+  width: 45%;
+  height: 400px;
+  display: inline-block;
+  overflow: hidden;
+}
+.work-carousel .carousel-item .carousel-img-1 {
+  margin-left: 40px;
+}
+.work-carousel .carousel-item .carousel-img-1 img {
+  position: relative;
+}
+.work-carousel .carousel-item .carousel-img-2 {
+  margin-left: 45px;
+}
+.work-carousel .mobile-carousel {
+  display: none;
+}
 @media only screen and (max-width: 992px) {
-  .navbar {
+  .work-carousel .mobile-carousel {
     display: flex;
   }
-  .main-header {
+}
+.work-carousel .mobile-carousel .carousel-item {
+  margin-top: 50px;
+}
+.work-carousel .mobile-carousel img {
+  width: 100%;
+  height: 300px;
+  object-fit: scale-down;
+}
+.work-carousel .mobile-carousel p {
+  margin-bottom: -60px;
+}
+@media only screen and (max-width: 992px) {
+  .work-carousel .desktop-carousel {
     display: none;
   }
-  .carousel-inner p b {
-    font-size: 30px;
-    margin-left: 0px;
+}
+.work-carousel .desktop-carousel p b {
+  font-size: 25px;
+  margin-left: 40px;
+}
+
+.gallery {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media only screen and (max-width: 992px) {
+  .gallery {
+    margin-top: 80px;
   }
-  .mobile-carousel .carousel-item {
+}
+.gallery img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  padding: 20px;
+  transition: all 0.3s linear;
+}
+.gallery img:hover {
+  padding: 0px;
+  filter: brightness(0.7);
+}
+.gallery .active {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 992px) {
+  .gallery .active {
     margin-top: 0px;
   }
-  .abt-text-2 {
-    margin-top: 40px;
+}
+.gallery .col-lg-6 {
+  margin-bottom: 90px;
+}
+@media only screen and (max-width: 992px) {
+  .gallery .col-lg-6 {
+    margin-bottom: 40px;
   }
-  .about .main-text {
-    text-align: center;
-  }
-  .faq {
-    text-align: center;
-  }
+}
+.gallery .col-lg-6 .img-text {
+  margin-left: 20px;
+  font-size: 18px;
+}
+.gallery .col-lg-6 .description {
+  font-size: 16px;
+  color: #818181;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: #bebebe;
+  --bs-accordion-active-color: none;
+  --bs-accordion-active-bg: none;
+}
+.accordion .accordion-body {
+  font-size: 17px;
+}
+.accordion .accordion-button b {
+  font-family: "Roboto";
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

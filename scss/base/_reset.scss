@@ -3,3 +3,31 @@
     margin: 0px;
 
 }
+
+li {
+    display: inline-block;
+}
+
+@media only screen and (max-width:992px) {
+    .main-header {
+        display: none;
+    }
+    .carousel-inner p b {
+        font-size: 30px;
+        margin-left: 0px;
+        
+    }
+    .mobile-carousel .carousel-item {
+        margin-top: 0px;
+    }
+    .about .main-text {
+        text-align: center;
+    }
+
+    .faq {
+        text-align: center;
+    }
+
+    
+
+}

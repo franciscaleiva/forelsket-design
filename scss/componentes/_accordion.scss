@@ -1,4 +1,7 @@
 .accordion {
+    --bs-accordion-btn-focus-border-color: #bebebe;
+    --bs-accordion-active-color: none;
+    --bs-accordion-active-bg: none;
     .accordion-body {
         font-size: 17px;
     }

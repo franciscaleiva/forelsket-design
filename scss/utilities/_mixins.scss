@@ -1,0 +1,21 @@
+@mixin main-text-container {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/03f5fc110557559.5ff1e81fe91cd.gif);
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+@mixin main-text {
+    font-size: 100px;
+        font-family: 'Roboto';
+        position: relative;
+        padding-top: 250px;
+        z-index: 10;
+        color: #000000;
+        @media only screen and (max-width:992px) {
+            font-size: 50px;
+        }
+}
