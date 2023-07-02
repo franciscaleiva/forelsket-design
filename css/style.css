@@ -385,7 +385,7 @@ footer .icon-container b {
   height: 350px;
   object-fit: cover;
   padding: 20px;
-  transition: all 0.3s linear;
+  transition: all 0.3s;
 }
 .gallery img:hover {
   padding: 0px;
